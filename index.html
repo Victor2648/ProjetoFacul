@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Produtos</title>
+  <!-- Fonte do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <h1>Loja de Produtos</h1>
+    <div class="cart">
+      <button id="cart-btn">Carrinho (0)</button>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Filtro de Categorias -->
+    <div class="filter">
+      <button class="filter-btn" data-category="all">Todos</button>
+      <button class="filter-btn" data-category="eletronicos">Eletrônicos</button>
+      <button class="filter-btn" data-category="roupas">Roupas</button>
+    </div>
+
+    <!-- Lista de Produtos -->
+    <div class="product-list">
+      <div class="product" data-price="159.90" data-category="eletronicos">
+        <img src="imagens/oster.jpeg" alt="Produto 1">
+        <h2>Produto 1</h2>
+        <p>Preço: R$ 159,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product" data-price="39.90" data-category="roupas">
+        <img src="imagens/camisa 1.jpeg" alt="Produto 2">
+        <h2>Produto 2</h2>
+        <p>Preço: R$ 39,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product" data-price="2599.90" data-category="eletronicos">
+        <img src="imagens/tv samsung.jpg" alt="Produto 3">
+        <h2>Produto 3</h2>
+        <p>Preço: R$ 2599,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product" data-price="39.90" data-category="roupas">
+        <img src="imagens/camisa 2.jpg" alt="Produto 4">
+        <h2>Produto 4</h2>
+        <p>Preço: R$ 39,90</p>
+        <button class="add-to-cart">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- Carrinho -->
+    <div class="cart-modal" id="cart-modal">
+      <h2>Seu Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: R$ <span id="cart-total">0.00</span></p>
+      <button id="close-cart">Fechar Carrinho</button>
+    </div>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
